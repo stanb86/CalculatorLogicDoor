@@ -1,0 +1,80 @@
+<html lang="fr"> <!-- On definie le code en html -->
+  <head>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Outil Calculator</title>
+    <link rel="stylesheet" href="page2.css" type="text/css">
+  </head>
+  <body>
+    <h1 class='titreprincipal'><strong>Calculator Logic Door</strong></h1>
+
+    <div class="container">  <!-- On regroupe des balises -->
+      <h2 class="description1">
+        Les portes logiques, ou portes binaires, sont des composants essentiels en électronique numérique...
+      </h2>
+
+    <!-- On crée un sélecteur avec des options -->
+    <div id="selector-container">
+      <label for="background-selector">Choisissez un fond :</label>
+      <select id="background-selector">
+          <option value="">-- Sélectionnez --</option>
+          <option value="informatique">Informatique</option>
+          <option value="nourriture">Nourriture</option>
+          <option value="animaux">Animaux</option>
+      </select>
+  </div>
+
+      <br><h2 class='description2'><a href="https://fr.wikipedia.org/wiki/Porte_logique">Les portes logiques</a>   <!-- On crée un lien hypertexte -->, ou portes binaires, sont des composants essentiels en électronique numérique, permettant de réaliser des opérations logiques sur des données binaires (0 ou 1). Elles sont utilisées pour construire des circuits qui effectuent des calculs, des prises de décision et des traitements d'information dans les ordinateurs et autres systèmes numériques. Par exemple, les portes AND, OR et NOT permettent de combiner des valeurs binaires pour obtenir des résultats spécifiques, formant ainsi la base des processeurs et des circuits de mémoire. Ces portes sont cruciales pour la conception des systèmes de traitement et de stockage d'informations.</h2></br>
+
+      <h2 class='h2-1'>C'est souvent utilisé dans différents métiers tels que :</h2>
+      <ul> <!-- On definie une liste non ordonnée -->
+        <li>- INGENIEUR EN ELECTRONIQUE</li> <!-- On definie chaque élément -->
+        <li>- DEVELOPPEUR DE LOGICIEL SYSTEME</li>
+        <li>- INGENIEUR EN INFORMATIQUE</li>
+        <li>- TECHNICIEN EN MAINTENANCE DE SYSTEME ELECTRONIQUE</li>
+      </ul>
+      
+      
+      <img src="bicycle.gif" alt="bicycle" />
+
+      <br><br><br><br><br><br><h2 class='Soustitre'><strong>Cet outil calcule le résultat des portes logiques</strong></h2><br><br>
+
+      <form name='Form'> <!-- On crée un formulaire -->
+        <div class="input-group">
+          <input type="number" name="nombre" id="binaire_1" min="0" max="1" step="1" placeholder="Binaire 1" /> <!-- On crée 2 zone de texte (chiffre) avec qui on peut interagir -->
+          <input type="number" name="nombre" id="binaire_2" min="0" max="1" step="1" placeholder="Binaire 2" />
+        </div>
+        <div class="select-group">
+          <select name="select" id="porte">
+            <option>ET</option> <!-- On définis des choix possibles -->
+            <option>OU</option>
+            <option>OU exclusif</option>
+            <option>NON-ET</option>
+            <option>NON-OU</option>
+          </select>
+        </div>
+
+        <div class="button-group">
+          <input type="button" id="bt" value="Calculer" onclick="calcul()" /> <!-- Si le bouton est clické on fait la fonction calcul() -->
+        </div>
+
+        <div>
+          <p class='resultat' id="resultat"></p>
+        </div>
+      </form>
+      
+
+      <p class='Texte1'>Ce travail a été réalisé par :</p>
+      <div><p>Muslim, Stan, Mouhamed Ali <br>© 2025 - TD-Web</p></div>
+    </div>
+
+
+    <!-- Boutons de pagination, pour passer de page en page -->
+    <div class="pagination">
+      <a href="page1.html">1</a>
+      <a href="page2.html" class="active">2</a>
+    </div>
+
+    <script src="script.js" type="text/javascript"></script> <!-- On lie le script -->
+  </body>
+</html>
